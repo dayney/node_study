@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 // 全局模式
-require('shelljs/global');
-
 var argv = require('yargs')
-  .alias('n', 'name')
+  .demand(['n'])
+  .default({n: 'tom'})
+  .default({n: 'your name'})
   .argv;
 
-console.log('hello', argv.n);
+console.log('hello', argv.n)
