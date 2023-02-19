@@ -1,9 +1,15 @@
 #!/usr/bin/env node
 // 全局模式
 var argv = require('yargs')
-  .demand(['n'])
-  .default({n: 'tom'})
-  .default({n: 'your name'})
+  .option('n', {
+    alias: 'name',
+    demand: true,
+    default: 'tom',
+    describe: 'your name',
+    type: 'string'
+  })
   .argv;
+  
 
+console.log('hello', argv)
 console.log('hello', argv.n)
