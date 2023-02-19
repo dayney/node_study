@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/dayney/node_study/issues"
   },
-  "homepage": "https://github.com/dayney/node_study#readme"
+  "homepage": "https://github.com/dayney/node_study#readme",
+  "dependencies": {
+    "shelljs": "^0.8.5"
+  }
 }
